@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>监控窗口是否活动</title>
+</head>
+<body>
+    <button>test</button>
+    <script>
+        var eventState = true
+        function setEventState(state) {
+          eventState = state
+          console.log(eventState, new Date())
+        }
+        function reloadLocation() {
+          setTimeout(function(){
+            if(eventState) location.reload()
+            else setEventState(true)
+            reloadLocation()
+          }, 3000)
+        }
+        document.addEventListener('visibilitychange',function(){ //浏览器切换事件
+          if(document.visibilityState=='hidden') { //状态判断
+              //normal_title=document.title;
+              document.title = '不可见';
+          }else {
+              document.title = '可见';
+          }
+        })
+        document.addEventListener('click', function(){
+          setEventState(false)
+        })
+        document.addEventListener('mousedown', function(){
+          setEventState(false)
+        })
+        document.addEventListener('mousemove', function(){
+          setEventState(false)
+        })
+        document.addEventListener('contextmenu',function(){
+          setEventState(false)
+        })
+        document.addEventListener('keydown', function(){
+          setEventState(false)
+        })
+        document.addEventListener('keypress', function(){
+          setEventState(false)
+        })
+        setTimeout(reloadLocation(), 3000)
+    </script>
+</body>
+</html>

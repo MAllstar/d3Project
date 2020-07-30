@@ -1,0 +1,39 @@
+.test1 {
+  width: 100%;
+  height: 500px;
+  /* background: linear-gradient(0deg, #FF0000 0%, #56124F 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%), radial-gradient(100% 140% at 100% 0%, #A6FF60 0%, #2700C1 100%);
+  background-blend-mode: hard-light, color-burn, color-dodge, normal; */
+  /* background: linear-gradient(0deg, #F7D6FF 0%, #005686 100%), linear-gradient(0deg, #FFFFFF 0%, #060046 100%), linear-gradient(310deg, #00FFA3 0%, #1A003C 100%), linear-gradient(127deg, #FF0000 0%, #3300C6 100%), radial-gradient(50% 72% at 50% 50%, #004584 0%, #00FFB2 100%), radial-gradient(100% 140% at 0% 100%, #5ED500 0%, #2200AA 100%);
+  background-blend-mode: soft-light, overlay, difference, difference, color-burn, normal; */
+  /* cursor: not-allowed; */
+  /* pointer-events: none; */
+  background: linear-gradient(115deg, rgb(211, 255, 215) 0%, rgb(0, 0, 0) 100%),
+radial-gradient(90% 100% at 50% 0%, rgb(200, 200, 200) 0%, rgb(22, 0, 45) 100%), radial-gradient(100% 100% at 80% 0%, rgb(250, 255, 0) 0%, rgb(36, 0, 0) 100%),
+radial-gradient(150% 210% at 100% 0%, rgb(112, 255, 0) 0%, rgb(20, 175, 125) 0%, rgb(0, 10, 255) 100%),
+radial-gradient(100% 100% at 100% 30%, rgb(255, 77, 0) 0%, rgba(0, 200, 255, 1) 100%), linear-gradient(60deg, rgb(255, 0, 0) 0%, rgb(120, 86, 255) 100%);
+background-blend-mode: overlay, overlay, difference, difference, difference, overlay;
+}
+
+.test2 {
+  width: 100%;
+  height: 500px;
+  /* background: linear-gradient(115deg, rgb(211, 255, 215) 0%, rgb(0, 0, 0) 100%), radial-gradient(90% 100% at 50% 0%, rgb(200, 200, 200) 0%, rgb(22, 0, 45) 100%), radial-gradient(100% 100% at 80% 0%, rgb(250, 255, 0) 0%, rgb(36, 0, 0) 100%), radial-gradient(150% 210% at 100% 0%, rgb(112, 255, 0) 0%, rgb(20, 175, 125) 0%, rgb(0, 10, 255) 100%), radial-gradient(100% 100% at 100% 30%, rgb(255, 77, 0) 0%, rgba(0, 200, 255, 1) 100%), linear-gradient(60deg, rgb(255, 0, 0) 0%, rgb(120, 86, 255) 100%);
+  background-blend-mode: overlay, overlay, difference, difference, difference, normal; */
+  /* background: linear-gradient(238deg, rgb(130, 255, 0) 0%, rgb(0, 84, 166) 100%), linear-gradient(238deg, rgb(0, 255, 69) 0%, rgb(0, 0, 0) 100%), linear-gradient(238deg, rgb(255, 255, 255) 48%, rgb(3, 0, 151) 100%), radial-gradient(100% 85% at 0% 100%, rgb(0, 0, 0) 0%, rgb(0, 131, 255) 50%, rgb(255, 0, 0) 100%), radial-gradient(100% 225% at 0% 100%, rgb(255, 0, 0) 0%, rgb(66, 255, 0) 100%), radial-gradient(100% 140% at 100% 0%, rgb(0, 134, 62) 0%, rgb(0, 239, 255) 50%, rgb(0, 113, 186) 100%);
+  background-blend-mode: color-dodge, overlay, multiply, difference, difference, normal; */
+  /* background: linear-gradient(180deg, #1400FF 0%, #000000 100%), linear-gradient(154.03deg, #33FF00 0%, #FF003D 74.04%), linear-gradient(341.1deg, #F0B4FF 7.52%, #1700A4 77.98%), radial-gradient(49.82% 80.51% at 49.82% 50%, #8100A2 0%, #FF3D00 100%), radial-gradient(50% 72.12% at 50% 50%, #EB00FF 0%, #110055 100%);
+  background-blend-mode: overlay, difference, difference, difference, normal; */
+  background: linear-gradient(115deg, rgb(211, 255, 215) 0%, rgb(0, 0, 0) 100%),
+  radial-gradient(90% 100% at 50% 0%, rgb(200, 200, 200) 0%, rgb(22, 0, 45) 100%), radial-gradient(100% 100% at 80% 0%, rgb(250, 255, 0) 0%, rgb(36, 0, 0) 100%),
+  radial-gradient(150% 210% at 100% 0%, rgb(112, 255, 0) 0%, rgb(20, 175, 125) 0%, rgb(0, 10, 255) 100%),
+  radial-gradient(100% 100% at 100% 30%, rgb(255, 77, 0) 0%, rgba(0, 200, 255, 1) 100%), linear-gradient(60deg, rgb(255, 0, 0) 0%, rgb(120, 86, 255) 100%);
+  background-blend-mode: overlay, overlay, difference, difference, difference, color-dodge;
+}
+
+
+.triangle{
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: black;
+}
