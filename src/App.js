@@ -39,8 +39,8 @@ const App = () => {
           window.location.reload()
      }
      else {
-       console.log('end')
-       clearTimeout(timer)
+      setIsEventActive(false)
+      clearTimeout(timer)
      }
     }, delayTime)
     setTimerId(timer)
@@ -50,16 +50,15 @@ const App = () => {
     // 浏览器切换事件
     document.addEventListener('visibilitychange', () => {
       // 状态判断
-      // setIsVisible(!(document.visibilityState === 'hidden'))
       if (document.visibilityState === 'hidden') {
           document.title = '不可见';
           setIsEventActive(false)
-          console.log(111, new Date())
+          // console.log(111, new Date())
       }
       else {
           document.title = '可见';
           setIsEventActive(true)
-          console.log(222, new Date())
+          // console.log(222, new Date())
       }
     })
 
